@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <link rel="icon" href="./assets/img/4geeks.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hello Rigo with Vanilla.js</title>
+    <title>Cartas Aleatorias</title>
 
     <!-- Fontawesome is our recomended library for icons -->
     <link
@@ -18,16 +18,11 @@
     <!-- Write your HTML code here, you can delete everything withing the body tags -->
     <div class="container p-2">
       <div class="card p-2 py-0">
-        <div class="cardHeader mt-0">
-          <p id="cardType" class="cardColor lh-sm p-0">♣</p>
-        </div>
-        <p1 id="cardNumber" class="p-2">#</p1>
-        <div class="cardFooter pb-">
-          <p id="cardTypeRotate" class="cardColor">♣</p>
-        </div>
+        <div id="top" class="lh-sm p-0 mt-0">·</div>
+        <div id="cardNumber" class="p-2">#</div>
+        <div id="bottom" class="pb-0">·</div>
       </div>
-      <button type="button" class="btn btn-primary" onClick="window.location.reload();">Reload</button>
-      
+      <button id="boton" class="btn btn-primary">Reload</button>
     </div>
 
     <!-- Do not delete this script tag, this is what connects your HTML with the Javascript code -->

@@ -13,12 +13,11 @@
     font-family: serif;
     border-radius: 5%;
 }
-
 #cardNumber{ 
     text-align: center;
     font-size: 130px;
 }
-.cardFooter{
+#bottom{
     display: flex;
     float: right;
     transform: rotate(180deg);
