@@ -1,31 +1,40 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" href="./assets/img/4geeks.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cartas Aleatorias</title>
 
-    <!-- Fontawesome is our recomended library for icons -->
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
-      integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
-      crossorigin="anonymous"
-    />
-  </head>
-  <body>
-    <!-- Write your HTML code here, you can delete everything withing the body tags -->
-    <div class="container p-2">
-      <div class="card p-2 py-0">
-        <div id="top" class="lh-sm p-0 mt-0">·</div>
-        <div id="cardNumber" class="p-2">#</div>
-        <div id="bottom" class="pb-0">·</div>
-      </div>
-      <button id="boton" class="btn btn-primary">Reload</button>
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" href="./assets/img/4geeks.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cartas Aleatorias</title>
+
+  <!-- Fontawesome is our recomended library for icons -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+    integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous" />
+</head>
+
+<body>
+  <!-- Write your HTML code here, you can delete everything withing the body tags -->
+  <div class="container p-2">
+    <div class="card p-2 py-0">
+      <div id="top" class="lh-sm p-0 mt-0">·</div>
+      <div id="cardNumber" class="p-2">#</div>
+      <div id="bottom" class="pb-0">·</div>
     </div>
+    <div id="bottomDiv">
+      <button id="boton" class="btn btn-primary">Call a Card</button>
+      <label>
+        Width (px):
+        <input type="number" id="widthInput" placeholder="Ej: 300" min="350" max="1000">
+      </label>
+      <label>
+        Height (px):
+        <input type="number" id="heightInput" placeholder="Ej: 400" min="500" max="1000">
+      </label>
+    </div>
+  </div>
 
-    <!-- Do not delete this script tag, this is what connects your HTML with the Javascript code -->
-    <script type="module" src="/app.js"></script>
-  </body>
+  <!-- Do not delete this script tag, this is what connects your HTML with the Javascript code -->
+  <script type="module" src="/app.js"></script>
+</body>
+
 </html>

@@ -22,3 +22,7 @@
     float: right;
     transform: rotate(180deg);
 }
+#bottomDiv{ 
+    color: white; 
+    padding-top: 20px;
+}

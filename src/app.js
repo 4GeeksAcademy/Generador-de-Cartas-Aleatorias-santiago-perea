@@ -5,6 +5,8 @@ import "./style.css";
 import "./assets/img/rigo-baby.jpg";
 import "./assets/img/4geeks.ico";
 
+let intervalo;
+
 function randomCard() { 
   let valor = ['A', 2, 3, 4, 5, 6, 7, 8, 9, 10 ,'J', 'Q', 'K'];
   let iconos = ['♦', '♥', '♠', '♣'];
@@ -32,4 +34,21 @@ window.onload = function() {
   randomCard(); 
   let boton = document.querySelector('#boton');
   boton.addEventListener("click", () => randomCard()); 
+  intervalo = setInterval(() => randomCard(), 10000); 
+  
+  let widthInput; 
+  let heightInput; 
+  const widthCard = document.getElementById('widthInput');
+  const heightCard = document.getElementById('heightInput');
+  let card = document.querySelector('.card'); 
+  widthCard.addEventListener('input', () => { 
+    widthInput = widthCard.value;
+    card.style.width = `${widthInput}px`;
+  });
+  heightCard.addEventListener('input', () => { 
+    heightInput = heightCard.value;
+    card.style.height = `${heightInput}px`;
+  });
 };
+
+
